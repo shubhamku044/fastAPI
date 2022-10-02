@@ -1,8 +1,9 @@
-from enum import unique
+from pydantic import BaseModel
 from .database import Base
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
+from typing import Optional
 
 
 class Post(Base):
